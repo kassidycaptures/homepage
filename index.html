@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav>
+    <h1>Kassidycaptures</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Prints</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <img class="Instagram" 
+    img src="Black Instagram.png" 
+    alt="Black Instagram Outline Logo">
+    <button class="button" role="button">Book Now</button>
+    </nav>
+    </header>
+    <main>
+<swiper-container slides-per-view="3" speed="1000" css-mode="true" navigation="true">
+    <swiper-slide><img class="Jordan" img src="jordan.jpg"></swiper-slide>
+    <swiper-slide><img src="house.jpg" img class="house"></swiper-slide>
+    <swiper-slide><img src="kenny.jpg" img class="kenny"></swiper-slide>
+    <swiper-slide><img src="beach.jpg" img class="beach"></swiper-slide>
+    <swiper-slide><img src="dog.jpg" img class="dog"></swiper-slide>
+    <swiper-slide><img class="Morgan" img src="morgan1.jpg"></swiper-slide>
+</swiper-container>
+    <h2>Welcome!</h2>
+    <p>Kassidy White is a freelance photographer based <br>in Pittsburgh. She photographs a range from portraits to </br>landscapes.</p>
+    <button class="learn" role="button">Learn More</button>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+new Swiper('.swiper',{
+    slidesPerView:3,
+    grid:{
+        rows: 3,
+    },
+    mousewheel:{
+        forceToAxis: true,
+    },
+      pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  }
+});
+</script>
+</body>
+<body id="second2">
+    <img class="kassidy" img src="portrait.jpg">
+    <h3>About Kassidycaptures</h3>
+    <p class="para2">I've been doing photography for 8 years and I enjoy<br>capturing the memories for people and moments</br>around me. I photograph portraits, sports<br>landscapes, still life, nature, architecture, candids,</br>street, and fine art photography.</p>
+</body2>
+    <body3>
+    <h4>Contact</h4>
+    <form>
+        <label for "fname">First Name</label><br>
+        <input type="text" id="fname" name="First Name">
+    </br><label for "lname">Last Name</label>
+    </br><input type="text" id="lname" name="Last Name">
+    </br><label for "mail">Email</label><br>
+        <input type="text" id="mail" name="Email"> </br>
+        <label for "msg">Message</label><br>
+        <textarea id="msg" name="Message"></textarea></br>
+    </form>
+    <button class="submit" role="button">Submit</button>
+</body3>
+<footer>
+    <nav>
+        <h5>©2023 Kassidy White</h5>
+        <h6>kassidycaptures@gmail.com</h6>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Prints</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img class="Logo" 
+        img src="white.png" 
+        alt="White Instagram Outline Logo">
+    </nav>
+</footer>
+</html>
